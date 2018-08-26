@@ -1,0 +1,200 @@
+::selection{color:skyblue;}
+.body{
+   /*background-image: url("asset/images/lappy.jpg");
+    background-size: cover;
+    */
+    background-repeat: repeat;
+    background-color: white;
+    overflow:scroll;
+}
+.wrapper {
+    position: relative;
+    display: grid;  
+    grid-template-columns: auto 10px auto 10px auto 10px auto;  
+    grid-template-rows: auto; 
+    width: 100%;
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    fill-opacity: 0.05;
+    color: whitesmoke;
+    min-height: 500px;
+    margin-top: 10%;
+    top:0px;
+/* margin: 0 auto; */
+   }
+   .toppage{
+       display: flex;
+       justify-content: space-between;
+    }
+
+.syclic{
+    grid-column: 1 span 3;
+    grid-row: 1;
+   
+}
+
+
+/* Nav settings */
+
+.nav{
+    grid-column: 5 span 9;  
+    grid-row: 1;
+    /* margin-left: 28%; */
+    justify-content: center;
+    /* position:fixed; */
+    top:0px;
+    /* z-index: 20; */
+    width:auto;
+}
+.nav a:hover{
+    color: skyblue;
+}
+    
+.nav li {
+    list-style-type: none;
+    margin-left:12px;
+    display: inline-flex;
+    align-self: flex-end;
+    font-size:20px;
+    font-weight: bold;
+} 
+.nav a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Segoe UI';
+    text-transform: uppercase;
+    font-size: larger;
+   display: inline;
+   align-self: flex-end;
+   
+}
+
+/* This is the end of the nav settings */
+/* .heade{
+    grid-column: 1 ;  
+    grid-row: 3
+} */
+.text{
+    grid-column: 1;  
+    grid-row: 5;
+}
+.show{
+    grid-column: 3 / span 5;  
+    grid-row: 7;
+    background-color: white;
+    width: 80%;
+    margin-top:3%;
+    margin-left:auto;
+    margin-right:auto;
+    padding: 10px;
+    position: relative;
+    color:black;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
+}
+.gallery{
+   
+    display: flex;
+    flex-wrap: wrap;
+    clear: both;
+    /* overflow: scroll; */
+    /* margin: 20px auto; */
+    /* margin-left:auto;
+    margin-right:auto; */
+    margin-top:30px;
+    margin-left:10%;
+    padding-bottom: 10px;
+    
+    /* padding-left:1px; */
+    /* padding-left:10px; */
+    /* margin-right:40px; */
+}
+.show1{
+    text-align: center;
+    color:black;
+}
+.mid {
+    display: inline-flex;
+    /* border: 2px solid white; */
+    /* margin: 10px; */
+    width: 230px;
+    height: 200px;/* For Safari 3.1 to 6.0 */
+    /* margin-left:auto;
+    margin-right: auto; */
+    padding-left: 10px;
+}
+.mid:hover{
+    transform: scale(2,2);
+}
+.heade{
+    color: white;
+    font-family: harrington;
+    align-self: flex-end;
+    text-align: end; 
+    font-size: 3em;
+}
+ /* .heade2{
+     color: red;
+     font-size: 2em;
+ } */
+.show{
+    color: black;
+    font-family: 'Segoe UI';
+    text-transform: uppercase;
+}
+.text{
+    flex-wrap: wrap;
+    font-family: arial;
+    font-size: 1.5em;
+   
+    padding: 10px;
+    margin: 10px;
+
+}
+.textmin1{
+    font-style: italic;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.textmin2{
+    padding-top: 10px;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    margin-top: 10px;
+    width: 100px;
+    padding: 10px;
+    font-family: 'Segoe UI';
+    text-transform: uppercase;
+
+}
+.footer {
+    text-decoration: none;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Segoe UI';}
+    
+
+.button {
+    background-color: skyblue;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+@media(max-width:900px){
+    .mid:hover{
+        transform: none;
+    }
+}
