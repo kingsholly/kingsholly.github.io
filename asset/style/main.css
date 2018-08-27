@@ -193,6 +193,12 @@
     margin: 4px 2px;
     cursor: pointer;
 }
+#footerlink li{
+list-style: none;
+   font-size: 2em;
+   background-color: whitesmoke; 
+}
+
 @media(max-width:900px){
     .mid:hover{
         transform: none;
