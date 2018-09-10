@@ -1,206 +1,178 @@
-::selection{color:skyblue;}
-.body{
-   /*background-image: url("asset/images/lappy.jpg");
-    background-size: cover;
-    */
-    background-repeat: repeat;
-    background-color: white;
-    overflow:scroll;
+.container{
+    word-wrap: break-word;
+    
 }
-.wrapper {
-    position: relative;
-    display: grid;  
-    grid-template-columns: auto 10px auto 10px auto 10px auto;  
-    grid-template-rows: auto; 
-    width: 100%;
-    background-image: url("../images/banner.jpg");
-    background-size: cover;
-    background-repeat: repeat;
-    fill-opacity: 0.05;
-    color: whitesmoke;
-    min-height: 500px;
-    margin-top: 10%;
-    top:0px;
-/* margin: 0 auto; */
-   }
-   .toppage{
-       display: flex;
-       justify-content: space-between;
+.navsection a,li{ /* this styles the list and links */
+text-decoration: none;
+list-style-type: none;
+color: skyblue;
+font-size: 18px;
+border-bottom: 1px dotted darkgoldenrod;
+margin: 2px;
+
+}
+.navsection a:active, a:visited{
+color: black;
+}
+.navsection a:hover{
+    color: yellowgreen;
+}
+
+    .navbar{ /* container for navigation content being aligned */
+        display: flex;
+        justify-content: space-between;
+        
+    
     }
+    .headwords:hover, .headworksform:hover{
+        
+        font-size: 1.2em;
+    }
+.navlogo img {  /* this sets the width and height for the logo */
+width: 133px;
 
-.syclic{
-    grid-column: 1 span 3;
-    grid-row: 1;
-   
 }
+.headtext{  /* styling text next for f1 logo*/
+border-bottom: 2px dotted yellowgreen;
+font-family: Helvetica;
+margin: 20px 20px 20px 20px;
+margin-top:20px;
+padding: 5px;
 
-
-/* Nav settings */
-
-.nav{
-    grid-column: 5 span 9;  
-    grid-row: 1;
-    /* margin-left: 28%; */
-    justify-content: center;
-    /* position:fixed; */
-    top:0px;
-    /* z-index: 20; */
-    width:auto;
 }
-.nav a:hover{
-    color: skyblue;
-}
-    
-.nav li {
-    list-style-type: none;
-    margin-left:12px;
-    display: inline-flex;
-    align-self: flex-end;
-    font-size:20px;
-    font-weight: bold;
-} 
-.nav a{
-    text-decoration: none;
-    color: black;
-    font-family: 'Segoe UI';
-    text-transform: uppercase;
-    font-size: larger;
-   display: inline;
-   align-self: flex-end;
-   
+.headwords{
+  font-family: 'segoe ui';
+  padding: 10px;
+  margin: 10px;
+  
+
 }
 
-/* This is the end of the nav settings */
-/* .heade{
-    grid-column: 1 ;  
-    grid-row: 3
-} */
-.text{
-    grid-column: 1;  
-    grid-row: 5;
-}
-.show{
-    grid-column: 3 / span 5;  
-    grid-row: 7;
-    background-color: white;
-    width: 80%;
-    margin-top:3%;
-    margin-left:auto;
-    margin-right:auto;
-    padding: 10px;
-    position: relative;
-    color:black;
-    text-align: center;
-    font-size: 28px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
-    
-}
-.gallery{
-   
-    display: flex;
-    flex-wrap: wrap;
-    clear: both;
-    /* overflow: scroll; */
-    /* margin: 20px auto; */
-    /* margin-left:auto;
-    margin-right:auto; */
-    margin-top:30px;
-    margin-left:10%;
-    padding-bottom: 10px;
-    
-    /* padding-left:1px; */
-    /* padding-left:10px; */
-    /* margin-right:40px; */
-}
-.show1{
-    text-align: center;
-    color:black;
-}
-.mid {
-    display: inline-flex;
-    /* border: 2px solid white; */
-    /* margin: 10px; */
-    width: 230px;
-    height: 200px;/* For Safari 3.1 to 6.0 */
-    /* margin-left:auto;
-    margin-right: auto; */
-    padding-left: 10px;
-}
-.mid:hover{
-    transform: scale(2,2);
-}
-.heade{
-    color: white;
-    font-family: harrington;
-    align-self: flex-end;
-    text-align: end; 
-    font-size: 3em;
-}
- /* .heade2{
-     color: red;
-     font-size: 2em;
- } */
-.show{
-    color: black;
-    font-family: 'Segoe UI';
-    text-transform: uppercase;
-}
-.text{
-    flex-wrap: wrap;
-    font-family: arial;
-    font-size: 1.5em;
-   
-    padding: 10px;
+.headwordsform{
     margin: 10px;
-
 }
-.textmin1{
-    font-style: italic;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-}
-.textmin2{
-    padding-top: 10px;
-    border-top: 3px solid white;
-    border-bottom: 3px solid white;
-    margin-top: 10px;
-    width: 100px;
-    padding: 10px;
-    font-family: 'Segoe UI';
-    text-transform: uppercase;
-
-}
-.footer {
-    text-decoration: none;
-    list-style: none;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    width: 80%;
-    margin: 0 auto;
-    font-family: 'Segoe UI';}
-    
 
 .button {
-    background-color: skyblue;
+    background-color: yellowgreen;
     border: none;
     color: white;
-    padding: 10px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    border-radius: 10%;
+    padding: 10px 30px;
     font-size: 16px;
     margin: 4px 2px;
-    cursor: pointer;
+    text-align: center;}
+    .alink{
+        background-color: yellowgreen;
+        border: none;
+        color: white;
+        border-radius: 10%;
+        padding: 7px 20px;
+        font-size: 1.1em;
+        margin: 2px 2px;
+
+        text-align: center;}
+.formtext{
+  border: 1px solid skyblue;
 }
-#footerlink li{
-list-style: none;
-   font-size: 2em;
-   background-color: whitesmoke; 
+    
+.content {  /*this style the parts below the nav bar */
+width: 110%;
+
+padding: 0;
+margin-left: auto;
+  margin-right: auto;
+}
+img{
+    width: 105%;
+    height: 250px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    
+
 }
 
-@media(max-width:900px){
-    .mid:hover{
-        transform: none;
-    }
+
+
+img:hover{
+    border: 0.1px solid #777;
 }
+@media only screen and (max-width: 45em) {  /* 540px */
+    .responsive, .content{
+        width: 100%;
+    }
+    .navmain{
+        display: block;
+        position: relative;
+    }
+    .navlogo img {  /* this sets the width and height for the logo */
+        width: 133px;
+        
+        }
+        .navbar{ /* container for navigation content being aligned */
+            display: flex;
+            justify-content: space-between;
+            height: 235px;
+        
+        }
+        .navsection{
+          position: absolute;
+          margin: -10px;
+          display: none;
+        }
+        .show{
+            display: inline-block;
+        }
+        .headwords:hover, .headworksform:hover{
+        font-size: 100%;
+            
+        }
+    
+        .navsection a,li{ /* this styles the list and links */
+            text-decoration: none;
+            list-style-type: none;
+            color: black;
+            border-bottom: 1px dotted yellowgreen;
+           width: 120px;
+            
+            }
+    }
+    
+    .line1{
+        width: 30px;
+        border-bottom: 2px solid dimgray;
+        background-color: dimgray;
+        margin: 5px;
+        
+    }
+    .line2{
+        width: 30px;
+        border-bottom: 2px solid dimgray;
+        background-color: dimgray;
+        margin: 5px;
+        
+    }
+    .line3{
+        width: 30px;
+        border-bottom: 2px solid dimgray;
+        background-color: dimgray;
+        margin: 5px;
+        
+    }
+    .navicon{
+        border: 2px solid whitesmoke;
+        width: 43px;
+        height: 38px;
+        border-radius: 15%;
+        margin: 22px;
+    
+    }
+    .navicon:hover{
+        background-color: whitesmoke;
+        color: white;
+        cursor: pointer;
+        
+    }
+    .navicon:active{
+        background-color: darkgray;
+    }
